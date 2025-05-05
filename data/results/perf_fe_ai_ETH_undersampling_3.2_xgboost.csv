@@ -1,0 +1,3 @@
+,accuracy,balanced accuracy,adj_balanced_accuracy,recall,precision,f1_score,target,country,sampling,feat_version,algorithm,best_random_state
+mean,0.6990000000000001,0.6912,0.38260000000000005,0.6442,0.6406000000000001,0.642,fe_ai,ETH,undersampling,3.2,xgboost,0
+std,0.010931605554537696,0.008318653737234128,0.017023513150933322,0.019967473550752502,0.015257784898208534,0.008573214099741131,fe_ai,ETH,undersampling,3.2,xgboost,0
