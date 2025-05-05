@@ -1,4 +1,4 @@
-## Bridging data gaps: predicting inadequate micronutrient intake with machine learning
+## Bridging data gaps: predicting inadequate micronutrient intake with machine learning 
 
 ## Table of contents  
 1. [Citing](#Citing)
@@ -26,12 +26,7 @@ Voukelatou, Vasiliki, Kevin Tang, Ilaria Lauzana, Manita Jangid, Giulia Martini,
 
 <a name="Abstract"/>
 
-# Introduction 
-The MIMI project is developing and validating an index for risk of inadequate
-micronutrient intake and applying machine learning to predict this sub nationally
-in India, Ethiopia and Nigeria. The ultimate aim of MIMI will be to apply 
-these methods to predict the index in countries that do not currently have good 
-data systems to inform LSFF decisions.
+Identifying populations at risk of inadequate micronutrient intake is useful for governments and humanitarian organizations in low- and middle-income countries to make informed and timely decisions on nutrition relevant policies and programmes. We propose a machine-learning methodological approach using secondary data on household dietary diversity, socioeconomic status, and climate indicators to predict the risk of inadequate micronutrient intake in Ethiopia and in Nigeria. We identify key predictive features common to both countries, and  we demonstrate the model's transferability from one country to another to predict risk of inadequate micronutrient intake in contexts where nationally representative primary data are unavailable.
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
