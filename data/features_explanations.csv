@@ -1,0 +1,26 @@
+,codename,explanation
+0,education2,education: highest education completed
+1,labour1,labour: work on agricultural activities
+2,labour4,labour: work on own business
+3,labour2,labour: worked temporary 
+4,labour5,labour: employed
+5,housing1,housing: flooring material
+6,housing2,housing: toilet facilities
+7,housing4,housing: cooking source
+8,food group1,"food group diversity: cereal, grains, roots and tubers"
+9,food group8,"food group diversity: sugar, or sweet"
+10,food group2,food group diversity: pulses/legumes/nuts
+11,food group5,food group diversity: vegetables and leaves
+12,food group6,food group diversity: fruits
+13,food group4,"food group diversity: meat, fish and eggs"
+14,food group7,food group diversity: oil/fat/butter
+15,food group3,food group diversity: milk and other dairy products
+16,asset1,asset ownership: fridge
+17,asset2,asset ownership: TV
+18,asset3,asset ownership: radio/tape recorder
+19,asset8,asset ownership: Cars and other vehicles
+20,asset6,asset ownership: bicycle
+21,asset7,asset ownership: motorcycle
+22,vim_avg,climate: normalized difference vegetation index longterm
+23,rfh_avg,climate: rainfall longterm
+24,r3q,climate: rainfall anomaly
