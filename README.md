@@ -9,10 +9,9 @@
 
 If you use our approach or code in this repository, please cite our paper:
 
-Voukelatou, Vasiliki, Kevin Tang, Ilaria Lauzana, Manita Jangid, Giulia Martini, Saskia de Pee, Frances Knight, and Duccio Piovani. "Bridging data gaps: predicting inadequate micronutrient intake with machine learning." bioRxiv (2025): 2025-04.
+Vasiliki Voukelatou, Kevin Tang, Ilaria Lauzana, Manita Jangid, Giulia Martini, Saskia de Pee, Frances Knight, and Duccio Piovani. "Bridging data gaps: predicting inadequate micronutrient intake with machine learning." bioRxiv (2025): 2025-04.
  <br/>
-[https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-022-00315-z
-](https://www.biorxiv.org/content/10.1101/2025.04.08.647715v2.full.pdf)
+[(https://www.biorxiv.org/content/10.1101/2025.04.08.647715v2.full.pdf)]
 
 `@article{voukelatou2025bridging, `<br/>
   `title={Bridging data gaps: predicting inadequate micronutrient intake with machine learning},`<br/>
