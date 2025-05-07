@@ -2,7 +2,8 @@
 
 ## Table of contents  
 1. [Citing](#Citing)
-2. [Abstract](#Abstract) 
+2. [Abstract](#Abstract)
+3. [Data] (#Data)
 
 ## Citing
 <a name="Citing"/>
@@ -28,6 +29,16 @@ Vasiliki Voukelatou, Kevin Tang, Ilaria Lauzana, Manita Jangid, Giulia Martini, 
 ## Abstract
 
 Identifying populations at risk of inadequate micronutrient intake is useful for governments and humanitarian organizations in low- and middle-income countries to make informed and timely decisions on nutrition relevant policies and programmes. We propose a machine-learning methodological approach using secondary data on household dietary diversity, socioeconomic status, and climate indicators to predict the risk of inadequate micronutrient intake in Ethiopia and in Nigeria. We identify key predictive features common to both countries, and  we demonstrate the model's transferability from one country to another to predict risk of inadequate micronutrient intake in contexts where nationally representative primary data are unavailable.
+
+## Data 
+
+**Target**
+To generate the target variables, we use data from Household Consumption and Expenditure Surveys (HCES) collected as part of the Living Standards Measurement Study (LSMS) in both Ethiopia and Nigeria. For Ethiopia, we use the fourth wave of the Ethiopia Socioeconomic Survey, a nationally representative survey which collected information from 6770 households between May to September 2019 \cite{eth_ess}. For Nigeria, we use the Nigerian Living Standards Survey, a nationally representative survey which collected information from 22,587 households between September 2018 to September 2019 \cite{nig_nlss}. These data can be found in the folder named 
+
+**Features**
+We generate a set of 25 food group diversity, socioeconomic, and climate features. 
+To generate **food group diversity-related features**, we use data from a different module of the same survey used to generate the targets, specifically the HCES data collected as part of the LSMS 2018/19 for Ethiopia and Nigeria \cite{eth_ess, nig_nlss}.
+
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
