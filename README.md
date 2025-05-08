@@ -27,7 +27,7 @@ Vasiliki Voukelatou, Kevin Tang, Ilaria Lauzana, Manita Jangid, Giulia Martini, 
 }`
 
 ## Abstract
-<a name="Abstract"/>
+<a name="Abstract"></a>
 
 Identifying populations at risk of inadequate micronutrient intake is useful for governments and humanitarian organizations in low- and middle-income countries to make informed and timely decisions on nutrition relevant policies and programmes. We propose a machine-learning methodological approach using secondary data on household dietary diversity, socioeconomic status, and climate indicators to predict the risk of inadequate micronutrient intake in Ethiopia and in Nigeria. We identify key predictive features common to both countries, and  we demonstrate the model's transferability from one country to another to predict risk of inadequate micronutrient intake in contexts where nationally representative primary data are unavailable.
 
@@ -48,6 +48,7 @@ We extract quantitative food consumption data from household level surveys to es
 and socioeconomic status. We also extract climate features from the WFP’s Seasonal Explorer platform. We then train machine-learning models using these variables to predict the risk of inadequate micronutrient intake (See Figure 1).
 
 <img width="489" alt="results_models" src="https://github.com/user-attachments/assets/fd1ee7cb-7b88-4bad-a92a-2e0706ab9575">
+
 <sup>Figure 1. Overview of the machine-learning methodological aprroach</sup>
 
 ## Machine-learning
