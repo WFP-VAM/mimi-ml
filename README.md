@@ -3,7 +3,10 @@
 ## Table of contents  
 1. [Citing](#Citing)
 2. [Abstract](#Abstract)
-3. [Data] (#Data)
+3. [Methodological approach](#Method)
+4. [Data](#Data)
+5. [Machine-learning](#ML)
+6. [References](#References)
 
 ## Citing
 <a name="Citing"/>
@@ -23,37 +26,38 @@ Vasiliki Voukelatou, Kevin Tang, Ilaria Lauzana, Manita Jangid, Giulia Martini, 
   `publisher={Cold Spring Harbor Laboratory}`<br/>
 }`
 
-
-<a name="Abstract"/>
-
 ## Abstract
+<a name="Abstract"/>
 
 Identifying populations at risk of inadequate micronutrient intake is useful for governments and humanitarian organizations in low- and middle-income countries to make informed and timely decisions on nutrition relevant policies and programmes. We propose a machine-learning methodological approach using secondary data on household dietary diversity, socioeconomic status, and climate indicators to predict the risk of inadequate micronutrient intake in Ethiopia and in Nigeria. We identify key predictive features common to both countries, and  we demonstrate the model's transferability from one country to another to predict risk of inadequate micronutrient intake in contexts where nationally representative primary data are unavailable.
 
-## Data 
+## Data
+<a name="Data"/>
 
 **Target**
-To generate the target variables, we use data from Household Consumption and Expenditure Surveys (HCES) collected as part of the Living Standards Measurement Study (LSMS) in both Ethiopia and Nigeria. For Ethiopia, we use the fourth wave of the Ethiopia Socioeconomic Survey, a nationally representative survey which collected information from 6770 households between May to September 2019 \cite{eth_ess}. For Nigeria, we use the Nigerian Living Standards Survey, a nationally representative survey which collected information from 22,587 households between September 2018 to September 2019 \cite{nig_nlss}. These data can be found in the folder named 
+To generate the target variables, we use data from Household Consumption and Expenditure Surveys (HCES) collected as part of the Living Standards Measurement Study (LSMS) in both Ethiopia and Nigeria. For Ethiopia, we use the fourth wave of the Ethiopia Socioeconomic Survey, a nationally representative survey which collected information from 6770 households between May to September 2019 [1]. For Nigeria, we use the Nigerian Living Standards Survey, a nationally representative survey which collected information from 22,587 households between September 2018 to September 2019 [2]. The generated targets can be found in [`data/ethiopia_nigeria_targets.csv`](./data/ethiopia_nigeria_targets.csv)
 
 **Features**
 We generate a set of 25 food group diversity, socioeconomic, and climate features. 
-To generate **food group diversity-related features**, we use data from a different module of the same survey used to generate the targets, specifically the HCES data collected as part of the LSMS 2018/19 for Ethiopia and Nigeria \cite{eth_ess, nig_nlss}.
+To generate **food group diversity-related features**, and **socioeconomic-related features** we use data extracted from different modules of the same surveys used to generate the targets, specifically the HCES data collected as part of the LSMS 2018/19 for Ethiopia [1] and Nigeria [2]. To generate the **climate-related features** we extract data from WFP’s Seasonal Explorer platform [3], originally derived from satellite data. The features can be found in [`data/all_features.csv`](./data/all_features.csv), merged for both countries, and in [`data/eth/eth_features.csv`](./data/eth/eth_features.csv) and [`data/nga/nga_features.csv`](./data/nga/nga_features.csv), seperately for Ethiopia and Nigeria, respectively.
 
+## Methodological approach
+<a name="Method"/>
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+We extract quantitative food consumption data from household level surveys to estimate the target variables. From the same surveys, we derive features related to food group diversity
+and socioeconomic status. We also extract climate features from the WFP’s Seasonal Explorer platform. We then train machine-learning models using these variables to predict the risk of inadequate micronutrient intake (See Figure 1).
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+<img width="489" alt="results_models" src="https://github.com/user-attachments/files/20099317/overall_approach4.pdf>
+<sup>Figure 1. Overview of the machine-learning methodological aprroach</sup>
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Machine-learning
+<a name="ML"/>
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+**Predicting risk of inadequate micronutrient intake with machine-learning** at a country level: The corresponding code can be found in `best_model_within_eth.ipynb` and `best_model_within_nga.ipynb` (for Ethiopia and Nigeria, respectively).
+**Cross-country models** and **application in data-constrained contexts**: The corresponding code can be found in `cross_country_running_notebook_eth_to_nga.ipynb` and `cross_country_running_notebook_nga_to_eth.ipynb.ipynb` (for the model trained in Ethiopia and the model trained in Nigeria, respectively).
+
+## References
+<a name="References"/>
+- [1] Central Statistics Agency of Ethiopia. Ethiopia socioeconomic survey (ESS4) 2018-2019. Public Use Dataset. Ref: ETH_2018_ESS_v03. Downloaded from https://microdata.worldbank.org/index.php/catalog/3823/study-description on December 2024.
+- [2] Nigeria National Bureau of Statistics. Nigeria Living Standards Survey (NLSS) 2018-2019. Dataset downloaded from https://microdata.worldbank.org/index.php/catalog/3827/study-description on December 2024.
+- [3] World Food Programme. Wfp seasonal explorer. https://tinyurl.com/4vpp5mz9 (2022). (Online; accessed February 2023)
