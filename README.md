@@ -1,4 +1,4 @@
-## Bridging data gaps: predicting inadequate micronutrient intake with machine learning 
+# Bridging data gaps: predicting inadequate micronutrient intake with machine learning 
 
 ## Table of contents  
 1. [Citing](#Citing)
@@ -54,8 +54,9 @@ and socioeconomic status. We also extract climate features from the WFP’s Seas
 ## Machine-learning
 <a name="ML"/></a>
 
-**Predicting risk of inadequate micronutrient intake with machine-learning** at a country level:<br/>The corresponding code can be found in `best_model_within_eth.ipynb` and `best_model_within_nga.ipynb` (for Ethiopia and Nigeria, respectively).
-**Cross-country models** and **application in data-constrained contexts**: <br/>The corresponding code can be found in `cross_country_running_notebook_eth_to_nga.ipynb` and `cross_country_running_notebook_nga_to_eth.ipynb.ipynb` (for the model trained in Ethiopia and the model trained in Nigeria, respectively).
+**Predicting risk of inadequate micronutrient intake with machine-learning** at a country level:<br/>The corresponding code can be found in `best_model_within_eth.ipynb` and `best_model_within_nga.ipynb` (for Ethiopia and Nigeria, respectively). <br>
+**Cross-country models** and **application in data-constrained contexts**: <br/>The corresponding code can be found in `cross_country_running_notebook_eth_to_nga.ipynb` and `cross_country_running_notebook_nga_to_eth.ipynb.ipynb` (for the model trained in Ethiopia and the model trained in Nigeria, respectively). <br>
+(metadata used for the analysis, training and visualisation are attached in the folder)
 
 ## References</a>
 <a name="References"/>
