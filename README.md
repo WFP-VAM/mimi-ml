@@ -13,7 +13,7 @@
 
 If you use our approach or code in this repository, please cite our paper:
 
-Vasiliki Voukelatou, Kevin Tang, Ilaria Lauzana, Manita Jangid, Giulia Martini, Saskia de Pee, Frances Knight, and Duccio Piovani. "Bridging data gaps: predicting inadequate micronutrient intake with machine learning." bioRxiv (2025): 2025-04.
+Vasiliki Voukelatou, Kevin Tang, Ilaria Lauzana, Manita Jangid, Giulia Martini, Saskia de Pee, Frances Knight, and Duccio Piovani. "Predicting risk of inadequate micronutrient intake with transferable machine learning models." bioRxiv (2025): 2025-04.
  <br/>
 (https://www.biorxiv.org/content/10.1101/2025.04.08.647715v3.full.pdf)
 
@@ -63,3 +63,4 @@ To generate **food group diversity-related features**, and **socioeconomic-relat
 - [1] Central Statistics Agency of Ethiopia. Ethiopia socioeconomic survey (ESS4) 2018-2019. Public Use Dataset. Ref: ETH_2018_ESS_v03. Downloaded from https://microdata.worldbank.org/index.php/catalog/3823/study-description on December 2024.<br/>
 - [2] Nigeria National Bureau of Statistics. Nigeria Living Standards Survey (NLSS) 2018-2019. Dataset downloaded from https://microdata.worldbank.org/index.php/catalog/3827/study-description on December 2024.<br/>
 - [3] World Food Programme. Wfp seasonal explorer. https://tinyurl.com/4vpp5mz9 (2022). (Online; accessed February 2023)
+
